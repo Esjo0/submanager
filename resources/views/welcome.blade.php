@@ -1,17 +1,3 @@
-<!--
-=========================================================
-* Soft UI Dashboard - v1.0.7
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://www.creative-tim.com/license)
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -106,7 +92,7 @@
                 <div class="card-header pb-0 text-left bg-transparent">
                     <div class="row">
                         @if ($keys->count() > 0 && !empty($keys) && !is_null($keys))
-                        <p class="border border-primary text-sm text-center"> <i class="fa fa-info-circle text-info"></i> Kindly click on your API key title to manage Subscribers</p>
+                        <p class="text-sm text-center"> <i class="fa fa-info-circle text-info"></i> Kindly click on your API key title to manage Subscribers</p>
                         @foreach ($keys as $key)
                             <div class="col-sm-4">
                                 <a class="btn btn-success btn-sm"
@@ -115,7 +101,7 @@
                             </div>
                         @endforeach
                         @else
-                        <p class="border border-warning text-sm text-center"> <i class="fa fa-info-circle text-warning"></i> Kindly Fill the form below to add an API key so you can manage subscribers</p> 
+                        <p class="text-sm text-center"> <i class="fa fa-info-circle text-warning"></i> Kindly Fill the form below to add an API key so you can manage subscribers</p> 
                         @endif
                         
                     </div>

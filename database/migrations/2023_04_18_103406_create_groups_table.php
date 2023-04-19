@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('groups', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('group_id');
+            $table->bigInteger('group_id_online');
             $table->string('name');
             $table->integer('key_id');
             $table->timestamps();

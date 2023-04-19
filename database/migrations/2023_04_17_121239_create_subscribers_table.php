@@ -16,8 +16,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('name');
             $table->string('country');
-            $table->date('sub_date', 'd/m/Y');
-            $table->time('sub_time');
+            $table->integer('group_id');
             $table->timestamps();
         });
     }

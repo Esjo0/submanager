@@ -22,3 +22,9 @@ Route::post('/check_key', [KeysController::class, 'check_key'])->name('check');
 Route::get('/subscribers/{id}', [SubscribersController::class, 'index'])->name('subscribers');
 
 Route::post('/create_group', [SubscribersController::class, 'create_group'])->name('create_group');
+
+Route::post('/add_subscriber', [SubscribersController::class, 'store'])->name('add_subscriber');
+
+Route::get('/datatable', [SubscribersController::class, 'list'])->name('datatable');
+Route::post('/edit', [SubscribersController::class, 'edit'])->name('edit');
+Route::delete('datatable/delete/{id}', [SubscribersController::class, 'delete'])->name('delete');

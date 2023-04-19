@@ -14,4 +14,8 @@ class Key extends Model
         'status'
     ];
 
+    public function groups(){
+        return $this->hasMany(Group::class, 'key_id', 'id');
+    }
+
 }
